@@ -64,6 +64,7 @@ const SUCCESS = {
   contrastText: GREY[800],
 };
 
+
 const WARNING = {
   lighter: '#C3E5AE',
   light: '#E9EFC0',

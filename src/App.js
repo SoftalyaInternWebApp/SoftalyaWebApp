@@ -1,19 +1,28 @@
 // routes
 import Router from './routes';
+
 // theme
-import ThemeProvider from './theme';
+
 // components
 import ScrollToTop from './components/ScrollToTop';
 import { BaseOptionChartStyle } from './components/chart/BaseOptionChart';
+import ThemeProvider from './theme';
 
 // ----------------------------------------------------------------------
 
 export default function App() {
+
+
+
   return (
-    <ThemeProvider>
+
+    <ThemeProvider >
       <ScrollToTop />
       <BaseOptionChartStyle />
       <Router />
+
     </ThemeProvider>
+
+
   );
 }

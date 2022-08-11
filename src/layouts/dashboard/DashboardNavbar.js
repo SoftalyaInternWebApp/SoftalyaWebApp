@@ -1,12 +1,13 @@
 // material
+import { React, useState } from 'react';
 import { alpha, styled } from '@mui/material/styles';
 import { Stack, AppBar, Toolbar, Box } from '@mui/material';
 // components
 //
 import AccountPopover from './AccountPopover';
-import CustomizedSwitches from './CustomizedSwitches';
 
 import LanguagePopover from './LanguagePopover';
+// import MyApp from './MyApp';
 import NotificationsPopover from './NotificationsPopover';
 
 // ----------------------------------------------------------------------
@@ -33,24 +34,49 @@ const ToolbarStyle = styled(Toolbar)(({ theme }) => ({
   },
 }));
 
+
 // ----------------------------------------------------------------------
 
 
 
 export default function DashboardNavbar() {
+
+  const [darkModeStatus, setDarkModeStatus] = useState(false)
+
+  const darkMode = () => {
+
+    let style = ''
+
+
+    if (!darkModeStatus) {
+      style = 'invert(1) hue-rotate(180deg)'
+      setDarkModeStatus(true)
+    } else {
+      style = 'invert(0)'
+      setDarkModeStatus(false)
+    }
+
+    document.querySelector('html').style.filter = style;
+    document.querySelectorAll('img').forEach(item => {
+      item.style.filter = style
+    })
+  }
+
   return (
+
     <RootStyle>
       <ToolbarStyle>
         <Box sx={{ mb: 1, mx: 115, mt: 1 }}>
           <Stack direction="row" alignItems="center" spacing={{ xs: 0.5, sm: 2.5 }}>
-
-            <CustomizedSwitches />
             <LanguagePopover />
             <NotificationsPopover />
             <AccountPopover />
+            <button type="button" onClick={darkMode}>{darkModeStatus ? 'Light' : 'Dark'}</button>
           </Stack>
         </Box>
       </ToolbarStyle>
     </RootStyle>
+
+
   );
 }

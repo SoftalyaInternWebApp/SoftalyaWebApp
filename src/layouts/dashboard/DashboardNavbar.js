@@ -1,10 +1,11 @@
 // material
 import { alpha, styled } from '@mui/material/styles';
-import { Box,Stack, AppBar, Toolbar } from '@mui/material';
+import { Stack, AppBar, Toolbar, Box } from '@mui/material';
 // components
 //
 import AccountPopover from './AccountPopover';
-import LanguagePopover from './LanguagePopover';
+import CustomizedSwitches from './CustomizedSwitches';
+
 import NotificationsPopover from './NotificationsPopover';
 
 // ----------------------------------------------------------------------
@@ -39,14 +40,14 @@ export default function DashboardNavbar() {
   return (
     <RootStyle>
       <ToolbarStyle>
-      
-      <Box sx={{ mb: 1, mx:125 , mt: 1 }}>
- <Stack direction="row" alignItems="center" spacing={{ xs: 0.5, sm: 1.5 }}>
-          <LanguagePopover />
-          <NotificationsPopover />
-          <AccountPopover />
-        </Stack>
-</Box>
+        <Box sx={{ mb: 1, mx: 115, mt: 1 }}>
+          <Stack direction="row" alignItems="center" spacing={{ xs: 0.5, sm: 2.5 }}>
+
+            <CustomizedSwitches />
+            <NotificationsPopover />
+            <AccountPopover />
+          </Stack>
+        </Box>
       </ToolbarStyle>
     </RootStyle>
   );

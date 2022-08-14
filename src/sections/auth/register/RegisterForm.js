@@ -19,10 +19,10 @@ export default function RegisterForm() {
   const [showPassword, setShowPassword] = useState(false);
 
   const RegisterSchema = Yup.object().shape({
-    firstName: Yup.string().required('First name required'),
-    lastName: Yup.string().required('Last name required'),
-    email: Yup.string().email('Email must be a valid email address').required('Email is required'),
-    password: Yup.string().required('Password is required'),
+    firstName: Yup.string().required('Bu alan zorunludur.'),
+    lastName: Yup.string().required('Bu alan zorunludur.'),
+    email: Yup.string().email('Geçerli bir Email adresi giriniz.').required('Bu alan zorunludur.'),
+    password: Yup.string().required('Bu alan zorunludur.'),
   });
 
   const defaultValues = {

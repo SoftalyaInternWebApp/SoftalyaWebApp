@@ -139,7 +139,7 @@ export default function User() {
           <Typography variant="h4" gutterBottom>
             Sürücüler
           </Typography>
-          <Button variant="contained" component={RouterLink} to="#" startIcon={<Iconify icon="eva:plus-fill" />}>
+          <Button variant="contained" component={RouterLink} to="/dashboard/user/adduser" style={{ textDecoration: 'none' }} startIcon={<Iconify icon="eva:plus-fill" />}>
             Yeni Sürücü
           </Button>
         </Stack>

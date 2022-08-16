@@ -8,6 +8,7 @@ import Page from '../components/Page';
 // eslint-disable-next-line
 import Iconify from '../components/Iconify';
 // sections
+import Map from '../components/Map'
 import {
   AppTasks,
   AppNewsUpdate,
@@ -51,7 +52,13 @@ export default function DashboardApp() {
           <Grid item xs={12} md={6} lg={8}>
 
 
-            {< img src="https://www.google.com/maps/vt/data=EQlWI2TJy4rZnyrK3Zc9DilXut5l3HXGvLD-7m6SMOCNAVsg0-6Cf4AdznH7FN9v3FMKgi3pCZzQYKy1qcOPaIzOpGFSeSHqjGh4RsXV5MpF_jvJoTdtWiZD1ykmtP-piSAHWwfS5ECx5XyfDdfYBLOiuolSBzzSJTlljpCxy--alYaEq4_VMm9SUJc23_26mXmt54oIP2E00mhY6GTRH_W9YWJQ78CAsmCuhVg2Ev5mX5aU4zDstIeC49Vjxw" alt="map" />}
+            <Map
+              id="Map"
+              options={{
+                center: { lat: 36.8653, lng: 30.6417 },
+                zoom: 15
+              }}
+            />
 
 
           </Grid>

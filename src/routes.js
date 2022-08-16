@@ -11,6 +11,7 @@ import Products from './pages/Products';
 import Tasks from './pages/Tasks';
 import DashboardApp from './pages/DashboardApp';
 import AddUser from './pages/AddUser';
+import Map from './pages/Map';
 
 
 // ----------------------------------------------------------------------
@@ -26,6 +27,7 @@ export default function Router() {
         { path: 'products', element: <Products /> },
         { path: 'tasks', element: <Tasks /> },
         { path: 'user/adduser', element: <AddUser /> },
+        { path: 'map', element: <Map /> },
       ],
     },
     {

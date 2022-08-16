@@ -28,7 +28,7 @@ export default function DashboardApp() {
 
     <Page title="Dashboard">
       <Container maxWidth="xl">
-        <Typography variant="h4" sx={{ mb: 5 }}>
+        <Typography variant="h4" sx={{ mb: 3 }}>
           Merhaba, Hoşgeldiniz 🙂
         </Typography>
 

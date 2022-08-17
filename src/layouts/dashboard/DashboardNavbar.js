@@ -67,11 +67,11 @@ export default function DashboardNavbar() {
 
     <RootStyle>
       <ToolbarStyle>
-        <Box sx={{ mb: 1, mx: 167, mt: 3 }}>
+        <Box sx={{ mb: 1, mx: 120, mt: 3 }}>
           <Stack direction="row" alignItems="center" spacing={{ xs: 0.5, sm: 2.5 }}>
             <IconButton color="primary" type="button" onClick={darkMode}>{darkModeStatus ? <LightModeIcon /> : <DarkModeIcon />}</IconButton>
             <NotificationsPopover />
-            <AccountPopover/>
+            <AccountPopover />
           </Stack>
         </Box>
       </ToolbarStyle>

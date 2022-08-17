@@ -41,7 +41,7 @@ class Map extends Component {
 
           render() {
                     return (
-                              <div style={{ width: 900, height: 500 }} id={this.props.id} />
+                              <div style={{ width: 740, height: 500, borderRadius: 20 }} id={this.props.id} />
                     );
           }
 }

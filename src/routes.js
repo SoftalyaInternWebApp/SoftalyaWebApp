@@ -13,7 +13,6 @@ import DashboardApp from './pages/DashboardApp';
 import AddUser from './pages/AddUser';
 import Map from './pages/Map';
 
-
 // ----------------------------------------------------------------------
 
 export default function Router() {

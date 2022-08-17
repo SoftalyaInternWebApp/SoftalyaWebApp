@@ -8,7 +8,7 @@ import Page from '../components/Page';
 // eslint-disable-next-line
 import Iconify from '../components/Iconify';
 // sections
-import Map from '../components/Map'
+import Map from '../sections/@dashboard/app/AppMapWidget'
 import {
   AppTasks,
   AppNewsUpdate,
@@ -56,7 +56,7 @@ export default function DashboardApp() {
               id="Map"
               options={{
                 center: { lat: 36.8653, lng: 30.6417 },
-                zoom: 15
+                zoom: 8
               }}
             />
 

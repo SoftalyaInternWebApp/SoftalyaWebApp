@@ -31,7 +31,7 @@ const AccountStyle = styled('div')(({ theme }) => ({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  padding: theme.spacing(2, 2.5),
+  padding: theme.spacing(2, 1.5),
   borderRadius: Number(theme.shape.borderRadius) * 1.5,
 }));
 
@@ -62,7 +62,7 @@ export default function DashboardSidebar({ isOpenSidebar, onCloseSidebar }) {
       }}
     >
 
-      <Box sx={{ mb: 5, mx: 2, mt: 5 }}>
+      <Box sx={{ mb: 4, mx: 2, mt: 5 }}>
         <Link underline="none" component={RouterLink} to="#">
           <AccountStyle>
             <img src={account.logoURL} alt="photoURL" />

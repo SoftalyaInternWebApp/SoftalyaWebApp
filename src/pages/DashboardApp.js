@@ -8,11 +8,11 @@ import Page from '../components/Page';
 // eslint-disable-next-line
 import Iconify from '../components/Iconify';
 // sections
-import Map from '../sections/@dashboard/app/AppMapWidget'
 import {
   AppTasks,
   AppNewsUpdate,
   AppOrderTimeline,
+  AppMapWidget,
   // AppWebsiteVisits,
   AppWidgetSummary,
   Footer,
@@ -29,7 +29,7 @@ export default function DashboardApp() {
     <Page title="Dashboard">
       <Container maxWidth="xl">
         <Typography variant="h4" sx={{ mb: 3 }}>
-          Merhaba, Hoşgeldiniz 🙂
+          Merhaba, Hoşgeldiniz 😊
         </Typography>
 
         <Grid container spacing={3}>
@@ -52,7 +52,7 @@ export default function DashboardApp() {
           <Grid item xs={12} md={6} lg={8}>
 
 
-            <Map
+            <AppMapWidget
               id="Map"
               options={{
                 center: { lat: 36.8653, lng: 30.6417 },

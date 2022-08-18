@@ -2,7 +2,7 @@
 // @mui
 // import { Link as RouterLink } from 'react-router-dom';
 import { useTheme } from '@mui/material/styles';
-import { Grid, Container } from '@mui/material';
+import { Container, Grid, Typography } from '@mui/material';
 // components
 import Page from '../components/Page';
 // eslint-disable-next-line
@@ -16,7 +16,7 @@ import {
     // AppWidgetSummary,
     // eslint-disable-next-line import/named
     AppMapWidget,
-    Footer,
+    // Footer,
 } from '../sections/@dashboard/app';
 
 // ----------------------------------------------------------------------
@@ -29,13 +29,20 @@ export default function Map() {
 
         <Page title="Map">
             <Container maxWidth="xl">
-                {/* <Typography variant="h4" sx={{ mb: 3 }}>
-                    Merhaba, Hoşgeldiniz 🙂
-                </Typography> */}
 
-                {/* <AppMapWidget>
-                    sldvmls
-                </AppMapWidget> */}
+
+
+                <Grid item xs={12} md={12} lg={12}>
+
+
+                    <AppMapWidget xs={12} md={12} lg={12} id="Map"
+                        options={{
+                            center: { lat: 36.8653, lng: 30.6417 },
+                            zoom: 8
+                        }} />
+
+
+                </Grid>
                 {/* <Grid item xs={12} md={4} lg={4}>
                     <AppOrderTimeline
                         title="Rota "
@@ -85,3 +92,4 @@ export default function Map() {
 
     );
 }
+

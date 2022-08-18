@@ -28,20 +28,18 @@ export default function Map() {
     return (
 
         <Page title="Map">
-            <Container maxWidth="xl">
+            <Container maxWidth="md">
 
 
 
-                <Grid item xs={12} md={12} lg={12}>
+                <Grid >
 
 
-                    <AppMapWidget xs={12} md={12} lg={12} id="Map"
+                    <AppMapWidget id="Map"
                         options={{
                             center: { lat: 36.8653, lng: 30.6417 },
                             zoom: 8
                         }} />
-
-
                 </Grid>
                 {/* <Grid item xs={12} md={4} lg={4}>
                     <AppOrderTimeline

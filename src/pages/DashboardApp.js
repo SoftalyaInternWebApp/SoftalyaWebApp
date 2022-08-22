@@ -53,6 +53,7 @@ export default function DashboardApp() {
 
 
             <AppMapWidget
+
               id="Map"
               options={{
                 center: { lat: 36.8653, lng: 30.6417 },

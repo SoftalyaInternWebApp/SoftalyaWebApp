@@ -21,32 +21,32 @@ const navConfig = [
     path: '/dashboard/products',
     icon: getIcon('eva:people-fill'),
   },
-  {
-    title: 'Güzergahlar',
-    path: '/dashboard/map',
-    icon: getIcon('bxs:map'),
-  },
+  // {
+  //   title: 'Güzergahlar',
+  //   path: '/dashboard/map',
+  //   icon: getIcon('bxs:map'),
+  // },
   {
     title: 'Görevler',
     path: '/dashboard/tasks',
     icon: getIcon('fluent:clipboard-task-list-rtl-24-filled'),
   },
 
-  // {
-  //   title: 'Kullanıcı Girişi',
-  //   path: '/login',
-  //   icon: getIcon('eva:lock-fill'),
-  // },
-  // {
-  //   title: 'Üye ol',
-  //   path: '/register',
-  //   icon: getIcon('eva:person-add-fill'),
-  // },
-  // {
-  //   title: 'Not found',
-  //   path: '/404',
-  //   icon: getIcon('eva:alert-triangle-fill'),
-  // },
+  {
+    title: 'Kullanıcı Girişi',
+    path: '/login',
+    icon: getIcon('eva:lock-fill'),
+  },
+  {
+    title: 'Üye ol',
+    path: '/register',
+    icon: getIcon('eva:person-add-fill'),
+  },
+  {
+    title: 'Not found',
+    path: '/404',
+    icon: getIcon('eva:alert-triangle-fill'),
+  },
 ];
 
 export default navConfig;
